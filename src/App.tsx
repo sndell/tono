@@ -18,6 +18,7 @@ const App = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
   return (
     <div className="flex h-screen justify-center bg-secondary">
       <div className="grid grid-cols-main">
