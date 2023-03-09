@@ -1,7 +1,8 @@
 import { useEffect } from "react";
-import { Header } from "./components/Layout";
+import { Header } from "../components/Layout";
+import { Outlet } from "react-router-dom";
 
-const App = () => {
+const Root = () => {
   const handleResize = () => {
     document.documentElement.style.setProperty(
       "--vh",
@@ -23,9 +24,10 @@ const App = () => {
     <div className="flex h-screen justify-center bg-secondary">
       <div className="grid grid-cols-main">
         <Header />
+        <Outlet />
       </div>
     </div>
   );
 };
 
-export default App;
+export default Root;
