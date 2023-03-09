@@ -1,18 +1,22 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  type: "jit",
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
+    height: {
+      screen: `calc(var(--vh) * 100)`,
+    },
     extend: {
       colors: {
-        primary: '#ffffff',
-        secondary: 'rgb(241 245 249)',
-        tertiary: '#F7FBFD',
-        accent: '#000000ff',
+        primary: "#ffffff",
+        secondary: "rgb(241 245 249)",
+        tertiary: "#F7FBFD",
+        accent: "#000000ff",
       },
       textColor: {
-        primary: '#363848',
-        secondary: 'rgb(241, 245, 249)',
-        accent: '#00000000ff',
+        primary: "#363848",
+        secondary: "rgb(241, 245, 249)",
+        accent: "#00000000ff",
       },
       fontFamily: {
         sourcesanspro: '"Source Sans Pro", sans-serif',
