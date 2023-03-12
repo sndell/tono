@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/Root";
-import { Closed, Notes, Open } from "./features/notes";
+import { Notes } from "./features/notes";
 
 const router = createBrowserRouter([
   {
@@ -16,11 +16,11 @@ const router = createBrowserRouter([
       },
       {
         path: "open",
-        element: <Open />,
+        element: <Notes />,
       },
       {
         path: "closed",
-        element: <Closed />,
+        element: <Notes />,
       },
     ],
   },
